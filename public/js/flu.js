@@ -98,16 +98,16 @@
 });
 
 var assets = [
-    'images/p1.png',
-    'images/p2.png',
-    'images/p3.png',
-    'images/p4.png',
-    'images/p5.png',
-    'images/p6.png',
-    'images/p7.png',
-    'images/p8.png',
-    'images/p9.png',
-    'images/p10.png'
+    './images/p1.jpg',
+    './images/p2.jpg',
+    './images/p3.jpg',
+    './images/p4.jpg',
+    './images/p5.jpg',
+    './images/p6.jpg',
+    './images/p7.jpg',
+    './images/p8.jpg',
+    './images/p9.jpg',
+    './images/p10.jpg'
 ];
 assets.forEach(function(src, index) {
     assets[index] = new Promise(function(resolve) {
@@ -134,11 +134,11 @@ Promise.all(assets).then(function(images) {
     canvas.height = 300;
     canvas.style['width'] = '170px';
     canvas.style['height'] = '300px';
-   
+
     document.getElementsByClassName('heartCa')[0].appendChild(canvas);
-    
+
     document.getElementsByClassName('heart')[0].addEventListener('click', function() {
-        
+
         Math.floor((Math.random()*10)+1);
         var min = 3,max=7;
         var num = Math.floor(Math.random()*(max-min+1)+min);
@@ -155,7 +155,7 @@ Promise.all(assets).then(function(images) {
        //stage.bubble(images[random.uniformDiscrete(0, images.length - 1)]);
        //stage.bubble(images[random.uniformDiscrete(0, images.length - 1)]);
 
-        
+
         //	let image = images[random.uniformDiscrete(0, images.length - 1)];
         //	stage.bubble(image, 3000, function(lifespan) {
         //		if(lifespan >= 0) {
