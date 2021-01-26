@@ -98,16 +98,16 @@
 });
 
 var assets = [
-    'images/1.png',
-    'images/2.png',
-    'images/3.png',
-    'images/4.png',
-    'images/5.png',
-    'images/6.png',
-    'images/7.png',
-    'images/8.png',
-    'images/9.png',
-    'images/10.png'
+    'images/p1.png',
+    'images/p2.png',
+    'images/p3.png',
+    'images/p4.png',
+    'images/p5.png',
+    'images/p6.png',
+    'images/p7.png',
+    'images/p8.png',
+    'images/p9.png',
+    'images/p10.png'
 ];
 assets.forEach(function(src, index) {
     assets[index] = new Promise(function(resolve) {
